@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta name="description" content="여의도 마사지 링크 블로그 - 진짜 브로들의 리얼 후기와 힐링 꿀팁. 여의도에서 마사지 고민 끝!">
+    <meta name="keywords" content="여의도 마사지, 여의도 마사지 링크, 여의도 블로그, 여의도 힐링, 여의도 스웨디시">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b05-yd-massage-link.vercel.app/blog">
+    <meta property="og:title" content="여의도 마사지 링크 블로그 - 브로들의 힐링 스팟">
+    <meta property="og:description" content="여의도에서 제일 쩌는 마사지 찾는 브로들 필독! 리얼 후기랑 꿀팁 다 있다.">
+    <title>블로그 - 여의도 마사지 링크</title>
+    <style>
+        /* Reset & base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Courier New', monospace; background: #000; color: #fff; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        a { color: #00ff41; text-decoration: underline; text-underline-offset: 4px; }
+        a:hover { color: #ff00ff; }
+        img, svg { max-width: 100%; height: auto; display: block; }
+        /* Layout */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        @media (max-width: 768px) { .container { padding: 0 12px; } }
+        /* Typography raw */
+        h1 { font-size: 2.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: -2px; margin: 0 0 20px 0; border-bottom: 4px solid #00ff41; padding-bottom: 10px; }
+        h2 { font-size: 2rem; font-weight: 700; margin: 40px 0 20px; color: #00ff41; }
+        h3 { font-size: 1.4rem; font-weight: 600; margin: 30px 0 15px; }
+        p { margin-bottom: 1.2rem; font-size: 1.05rem; }
+        .impact-text { font-size: 1.8rem; font-weight: 900; line-height: 1.2; text-transform: uppercase; color: #ff00ff; }
+        /* Color & borders */
+        .bg-black { background: #000; }
+        .bg-white { background: #0a0a0a; }
+        .bg-neon { background: #00ff41; color: #000; }
+        .border-neon { border: 3px solid #00ff41; }
+        .border-pink { border: 3px solid #ff00ff; }
+        .text-neon { color: #00ff41; }
+        .text-pink { color: #ff00ff; }
+        /* Navigation */
+        nav { background: #0a0a0a; border-bottom: 3px solid #00ff41; padding: 15px 0; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .nav-links { display: flex; gap: 30px; list-style: none; }
+        .nav-links a { font-size: 1.1rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-links a:hover { text-decoration: none; color: #ff00ff; }
+        .hamburger { display: none; cursor: pointer; background: none; border: none; padding: 5px; }
+        .hamburger span { display: block; width: 30px; height: 3px; background: #00ff41; margin: 6px 0; transition: 0.3s; }
+        @media (max-width: 768px) {
+            .hamburger { display: block; }
+            .nav-links { display: none; flex-direction: column; width: 100%; background: #0a0a0a; position: absolute; top: 60px; left: 0; padding: 20px; border-bottom: 3px solid #00ff41; gap: 15px; }
+            .nav-links.active { display: flex; }
+            .nav-links a { font-size: 1.2rem; }
+        }
+        /* Hero section for blog */
+        .blog-hero { padding: 60px 0 40px; border-bottom: 3px solid #ff00ff; margin-bottom: 50px; }
+        .blog-hero h1 { font-size: 3.2rem; color: #ff00ff; border-bottom-color: #ff00ff; }
+        .blog-meta { display: flex; gap: 20px; font-size: 0.9rem; color: #888; margin: 20px 0; text-transform: uppercase; }
+        .blog-meta span { border: 1px solid #333; padding: 4px 12px; }
+        /* Article card */
+        .article-card { background: #0a0a0a; border: 3px solid #333; padding: 40px; margin-bottom: 40px; }
+        .article-card:hover { border-color: #00ff41; }
+        .article-card blockquote { border-left: 4px solid #ff00ff; padding-left: 20px; margin: 20px 0; font-style: italic; color: #ccc; }
+        .article-card .highlight-box { background: #111; border: 2px solid #00ff41; padding: 20px; margin: 20px 0; }
+        .article-card .highlight-box p:last-child { margin-bottom: 0; }
+        .cta-button { display: inline-block; background: #00ff41; color: #000; font-weight: 900; text-transform: uppercase; padding: 15px 30px; text-decoration: none; border: 3px solid #00ff41; margin: 20px 0; transition: 0.3s; }
+        .cta-button:hover { background: transparent; color: #00ff41; border-color: #00ff41; }
+        /* Tel link */
+        .tel-link { display: inline-block; background: #ff00ff; color: #000; font-weight: 900; font-size: 1.5rem; padding: 15px 30px; text-decoration: none; border: 3px solid #ff00ff; transition: 0.3s; margin: 20px 0; }
+        .tel-link:hover { background: transparent; color: #ff00ff; }
+        /* Footer */
+        footer { border-top: 3px solid #00ff41; padding: 30px 0; margin-top: 60px; text-align: center; font-size: 0.9rem; color: #666; }
+        footer a { color: #00ff41; }
+        footer .footer-links { display: flex; justify-content: center; gap: 30px; list-style: none; margin: 20px 0; flex-wrap: wrap; }
+        footer .footer-links a { font-size: 0.9rem; text-transform: uppercase; }
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.4rem; }
+            .blog-hero h1 { font-size: 2.2rem; }
+            .article-card { padding: 20px; }
+            .tel-link { font-size: 1.2rem; padding: 12px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="container nav-container">
+        <a href="/" style="font-weight:900; font-size:1.4rem; text-transform:uppercase; color:#00ff41; text-decoration:none;">여마링</a>
+        <button class="hamburger" aria-label="메뉴 열기" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active');">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="/">홈</a></li>
+            <li><a href="/about">소개</a></li>
+            <li><a href="/programs">코스</a></li>
+            <li><a href="/blog">블로그</a></li>
+            <li><a href="/contact">문의</a></li>
+            <li><a href="tel:010-1234-5678" class="tel-link">전화예약</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container">
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <h1>브로들의 리얼 블로그</h1>
+        <div class="blog-meta">
+            <span>2025.03.17</span>
+            <span>여의도 마사지 링크</span>
+            <span>조회 1,247</span>
+        </div>
+        <p class="impact-text">"진짜 힐링은 여기서 시작된다"</p>
+        <p style="margin-top:20px;">여의도에서 제대로 된 마사지 고민하는 브로들 모여라. 내가 직접 경험하고 써내려가는 리얼 후기, 꿀팁, 그리고 우리만 알던 그 스팟까지 다 까발린다.</p>
+    </section>
+
+    <!-- Main Article -->
+    <article class="article-card">
+        <h2>여의도 마사지 링크에서 만나는 진짜 힐링: 브로들의 경험담</h2>
+        <p>야, 브로. 나는 여의도에서 3년째 직장 다니는 평범한 직장인이야. 매일 야근에 스트레스 쌓이고, 어깨는 돌덩이처럼 굳어가고… 진짜 힐링이 필요했어. 그래서 시작한 게 마사지 투어였는데, 여의도 마사지 링크 알게 된 후로는 다른 데 안 가고 여기만 간다.</p>
+
+        <p>첫 방문 때부터 느낀 건데, 분위기가 쩔어. 조명도 어둡고 향도 좋고, 무엇보다 관리사분들이 완전 프로야. 내가 <strong>스웨디시</strong> 좋아하는데, 압력 조절을 내 몸 상태에 맞춰서 해줘서 그날 컨디션에 딱 맞는 마사지를 받을 수 있어.</p>
+
+        <blockquote>
+            "처음엔 그냥 가볍게 받으려고 갔는데, 하고 나니까 몸이 확 가벼워지고 잠도 푹 잘 잤어. 이건 중독성 있어."
+        </blockquote>
+
+        <p>특히 <strong>여의도 마사지 링크</strong>의 장점은 가격 대비 퀄리티야. 여의도 오피스가 밀집된 지역이라 보통 마사지샵은 비싸기 마련인데, 여긴 합리적인 가격에 서비스가 좋아. 나는 매달 2번씩 정기예약 하고 있어. 브로들한테도 강추한다.</p>
+
+        <div class="highlight-box">
+            <p><strong>✔ 브로가 추천하는 코스</strong></p>
+            <p>🔹 <strong>1시간 스웨디시</strong> — 점심시간에 후딱 받고 업무 효율 2배</p>
+            <p>🔹 <strong>1.5시간 타이마사지</strong> — 퇴근 후 풀코스로 몸 풀기 좋아</p>
+            <p>🔹 <strong>2시간 스페셜</strong> — 주말에 진짜 제대로 힐링하고 싶을 때</p>
+        </div>
+
+        <p>한 번은 친구 놈이 "여의도 마사지 링크 괜찮냐?" 물어보길래, 데려갔거든. 그 친구가 하고 나서 말이 없더라. 그러더니 바로 다음주에 혼자 또 갔어. ㅋㅋㅋ 그만큼 만족도가 높다는 증거야.</p>
+
+        <p>위치도 좋아. <strong>여의도역</strong>에서 걸어서 3분 거리라 접근성 최고. 점심시간에 슬쩍 가기도 편하고, 퇴근 길에 들르기도 딱이야. 건물 입구부터 마사지 링크 간판이 크게 보여서 찾기도 쉽고.</p>
+
+        <p>아, 그리고 예약은 꼭 전화로 하는 게 좋아. 온라인 예약도 되긴 하는데, 전화하면 원하는 시간대를 더 정확하게 잡을 수 있고, 추가 서비스나 문의사항도 바로바로 확인 가능하니까. 나도 항상 전화로 예약해.</p>
+
+        <a href="tel:010-1234-5678" class="tel-link">📞 지금 전화 예약하기</a>
+
+        <p style="margin-top:30px;">브로, 더 이상 고민하지 마. 여의도에서 진짜 힐링을 원한다면 <strong>여의도 마사지 링크</strong>로 전화 한 통이면 돼. 내가 보증한다. 후회 없을 거야.</p>
+    </article>
+
+    <!-- Additional Info / FAQ-style -->
+    <div style="border:3px solid #00ff41; padding:30px; margin:40px 0;">
+        <h2 style="margin-top:0;">브로들이 자주 묻는 질문</h2>
+        <div style="margin-bottom:20px;">
+            <p style="font-weight:bold; color:#ff00ff;">Q. 예약은 꼭 해야 하나요?</p>
+            <p>A. 워크인도 가능한데, 원하는 시간대가 있으면 전화 예약이 안전해. 브로들은 예약하고 가자.</p>
+        </div>
+        <div style="margin-bottom:20px;">
+            <p style="font-weight:bold; color:#ff00ff;">Q. 남성 전용인가요?</p>
+            <p>A. 아니야! 여성분들도 많이 방문해. 커플로 와도 좋고 혼자 와도 완전 편해.</p>
+        </div>
+</body>
+</html>
