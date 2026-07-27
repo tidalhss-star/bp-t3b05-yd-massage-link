@@ -2,176 +2,83 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="bpaas-design-system" content="brutalist-avantgarde">
-  <meta name="bpaas-design-theme" content="kr-neon-void">
-  <meta name="description" content="여의도 마사지 링크에 대한 모든 정보를 한눈에. 위치, 운영시간, 관리사 프로필, 코스별 가격, 예약 꿀팁까지 브로들을 위해 다 공개한다.">
-  <meta name="keywords" content="여의도 마사지 링크 정보, 여의도 마사지 위치, 여의도 스웨디시 가격, 여의도 1인샵 예약, 여의도 마사지 후기">
-  <meta name="robots" content="index, follow">
+  <title>여의도 마사지 정보</title>
+  <meta name="description" content="여의도에서 마사지를 고려 중이라면 반드시 알아야 할 핵심 체크포인트와 상황별 맞춤 정보. 선택 전 확인해야 할 실질적인 기준을 정리했습니다.">
+  <meta name="keywords" content="여의도 마사지, 마사지 정보, 여의도 몸 관리, 마사지 체크리스트, 마사지 선택 기준">
   <link rel="canonical" href="https://yeouido-body-tip.node-link.shop/about.html">
-  <meta property="og:title" content="여의도 마사지 링크 - 정보 | 브로들의 힐링 스팟">
-  <meta property="og:description" content="여의도에서 제일 쩌는 마사지 정보는 다 여기 있어. 위치, 시간, 가격, 후기까지. 지금 확인하고 예약 고고.">
+  <meta property="og:title" content="여의도 마사지 정보 – 선택 전 반드시 확인할 체크리스트">
+  <meta property="og:description" content="여의도 마사지 현황과 상황별 최적 선택 가이드를 한 눈에. 전문가적 시각으로 정리한 핵심 포인트를 확인하세요.">
   <meta property="og:url" content="https://yeouido-body-tip.node-link.shop/about.html">
   <meta property="og:type" content="website">
-  <title>여의도 마사지 링크 - 정보 | 브로들의 힐링 스팟</title>
-  <!-- CSS 핵심 (이전 페이지와 동일) -->
-  <style>
-    /* Reset & base */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Courier New', monospace; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-    a { color: #ff0055; text-decoration: underline; text-underline-offset: 3px; transition: all 0.15s ease; }
-    a:hover { color: #00ff88; }
-    img, svg { max-width: 100%; height: auto; display: block; }
-    /* Layout */
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-    @media (max-width: 768px) { .container { padding: 0 12px; } }
-    /* Typography raw */
-    h1 { font-size: 2.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: -2px; color: #00ff88; line-height: 1.1; margin-bottom: 0.5em; border-left: 6px solid #ff0055; padding-left: 15px; }
-    h2 { font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: -1px; color: #fff; border-bottom: 2px solid #ff0055; padding-bottom: 0.2em; margin: 1.5em 0 0.8em; }
-    h3 { font-size: 1.3rem; font-weight: 600; color: #ff0055; margin: 1.2em 0 0.5em; }
-    p { margin-bottom: 1em; }
-    .impact-text { font-size: 2.2rem; font-weight: 900; line-height: 1.2; color: #fff; text-transform: uppercase; letter-spacing: -1px; }
-    /* Color & borders */
-    .bg-black { background: #0a0a0a; }
-    .bg-white { background: #1a1a1a; }
-    .bg-neon { background: #ff0055; }
-    .border-neon { border: 2px solid #ff0055; }
-    .border-gray { border: 1px solid #333; }
-    .text-neon { color: #ff0055; }
-    .text-green { color: #00ff88; }
-    .text-gray { color: #888; }
-    /* Navigation */
-    nav { background: #111; border-bottom: 2px solid #ff0055; padding: 15px 0; }
-    nav .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    .nav-brand { font-size: 1.6rem; font-weight: 900; color: #ff0055; text-decoration: none; text-transform: uppercase; }
-    .nav-links { display: flex; gap: 30px; list-style: none; }
-    .nav-links a { color: #ccc; text-decoration: none; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; }
-    .nav-links a:hover { color: #00ff88; }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
-    .hamburger span { width: 28px; height: 3px; background: #ff0055; border-radius: 2px; }
-    @media (max-width: 768px) {
-      .nav-links { display: none; flex-direction: column; width: 100%; background: #111; padding: 20px; gap: 15px; border-top: 1px solid #333; }
-      .nav-links.active { display: flex; }
-      .hamburger { display: flex; }
-    }
-    /* Cards & sections */
-    .card { background: #1a1a1a; border: 1px solid #333; padding: 25px; margin-bottom: 20px; }
-    .card:hover { border-color: #ff0055; }
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
-    .faq-item { border-bottom: 1px solid #333; padding: 18px 0; }
-    .faq-question { font-weight: 700; color: #00ff88; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-    .faq-answer { margin-top: 10px; color: #aaa; }
-    /* Buttons */
-    .btn { display: inline-block; padding: 12px 30px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border: none; cursor: pointer; transition: 0.2s; text-decoration: none; }
-    .btn-neon { background: #ff0055; color: #0a0a0a; }
-    .btn-neon:hover { background: #00ff88; color: #0a0a0a; }
-    .tel-link { font-size: 1.4rem; font-weight: 900; color: #00ff88; text-decoration: none; display: inline-block; margin: 10px 0; }
-    .tel-link:hover { color: #ff0055; text-decoration: underline; }
-    /* Footer */
-    footer { background: #111; border-top: 2px solid #ff0055; padding: 30px 0; margin-top: 60px; text-align: center; }
-    footer p { color: #666; font-size: 0.85rem; }
-  </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:image" content="https://yeouido-body-tip.node-link.shop/og-image.png">
 </head>
 <body>
-  <!-- Navigation (이전 페이지와 동일) -->
-  <nav>
-    <div class="container">
-      <a href="/" class="nav-brand">여의도 마사지 링크</a>
-      <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
-        <span></span><span></span><span></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="/">홈</a></li>
-        <li><a href="/info">정보</a></li>
-        <li><a href="/review">후기</a></li>
-        <li><a href="tel:0507-1234-5678" class="tel-link">전화예약</a></li>
-      </ul>
-    </div>
+  <!-- 네비게이션 (공통) -->
+  <nav class="k-top-0dax">
+    <h1>여의도 마사지 링크</h1>
+    <ul class="x-txt-9e54">
+      <li><a href="/main">홈</a></li>
+      <li><a href="/category">카테고리</a></li>
+      <li><a href="/info">정보</a></li>
+      <li><a href="/contact">연락처</a></li>
+    </ul>
   </nav>
 
   <!-- 메인 콘텐츠 -->
-  <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
-    <!-- 페이지 타이틀 -->
-    <h1>정보</h1>
-    <p class="impact-text" style="margin-top: -0.5em; margin-bottom: 1.5em;">여의도 마사지 링크,<br>이거 하나면 끝</p>
+  <section class="t-body-3s39">
+    <h2>여의도 마사지, 왜 지금 바로 확인해야 하는가?</h2>
+    <p>여의도는 비즈니스와 레저가 교차하는 복합 공간이다. 직장인들의 스트레스, 운동 애호가들의 회복, 그리고 일시적인 신체 불편을 해소하려는 사람들까지, 다양한 수요가 동시에 존재한다. 이때 무작정 예약을 진행한다면, 기대 이하의 서비스나 불필요한 비용을 감수하게 될 위험이 크다. 따라서 사전에 체크해야 할 항목을 명확히 정의하고, 상황별로 어떤 기준이 중요한지를 파악하는 것이 필수다.</p>
+    <p>본 페이지는 “여의도 마사지 정보”라는 목적 아래, 실제 방문 전 확인해야 할 핵심 포인트를 상황별로 구분한다. 단순히 가격표만 제시하는 것이 아니라, 서비스 유형, 운영 시간, 전문인력 보유 여부, 위생·안전 관리 수준, 그리고 고객 맞춤형 프로그램 구성을 종합적으로 검토한다. 이러한 정보를 통해 사용자는 자신에게 가장 적합한 선택을 할 수 있다.</p>
+  </section>
 
-    <!-- 상세 정보 섹션 -->
-    <section>
-      <h2>📍 위치 & 운영시간</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>주소</h3>
-          <p>서울 영등포구 여의도동 22-3<br>여의도역 3번 출구 도보 2분<br>빌딩 1층에 바로 보여! 네이버 지도 검색하면 씐나게 찾아와.</p>
-          <p class="text-gray">※ 주차장은 따로 없어, 근처 공영주차장 이용 or 대중교통 강추.</p>
-        </div>
-        <div class="card">
-          <h3>운영시간</h3>
-          <p>월~금: 10:00 – 22:00 (마지막 접수 21:00)<br>토: 11:00 – 20:00<br>일요일: 정기 휴무 (브로들도 쉬어야지!)</p>
-          <p class="text-green">야근 끝나고 달려와도 돼! 늦은 예약은 전화로 확인 고고.</p>
-        </div>
-      </div>
-    </section>
+  <section class="t-body-3s39">
+    <h2>핵심 체크리스트 – 기본적인 5가지 항목</h2>
+    <ol class="x-body-f9xp">
+      <li>전문가 자격증 보유 현황</li>
+      <li>시설 위생 인증 및 관리 체계</li>
+      <li>서비스 제공 시간대와 예약 가능성</li>
+      <li>가격 대비 제공되는 프로그램 다양성</li>
+      <li>고객 맞춤형 상담 및 사전 진단 절차</li>
+    </ol>
+    <p>위 항목들은 모든 마사지 시설에서 최소한으로 만족해야 할 기준이다. 특히 자격증 보유 여부는 치료 효과와 직접 연결되므로, 반드시 확인해야 한다. 위생 인증은 코로나19 이후 더욱 중요한 요소가 되었으며, 운영 시간은 바쁜 직장인에게 큰 영향을 미친다. 가격과 프로그램 다양성은 예산과 목적에 따라 가중치를 다르게 적용할 수 있다.</p>
+    <p>마지막으로 사전 상담은 개인별 신체 상태와 목표에 맞는 맞춤형 서비스를 제공하기 위한 필수 단계다. 이 과정을 거치면 불필요한 시술을 피하고, 원하는 효과를 극대화할 수 있다.</p>
+  </section>
 
-    <!-- 관리사 & 코스 정보 -->
-    <section>
-      <h2>💆 관리사 & 코스</h2>
-      <div class="card">
-        <h3>관리사 프로필</h3>
-        <p><strong>민수 형</strong> (남, 10년 경력) – 스웨디시&스포츠 마사지 전문. “회사에서 쌓인 스트레스는 내가 풀어줄게”<br>
-        <strong>지은 누나</strong> (여, 8년 경력) – 타이마사지 & 아로마 오일. “부드럽지만 시원하게, 브로들 체형에 맞춰서”</p>
-        <p style="margin-top: 0.5em;">둘 다 자격증 보유, 정기 교육 이수 중이라 믿을 수 있어. 원하는 관리사 지정 예약 가능!</p>
+  <section class="t-body-3s39">
+    <h2>상황별 맞춤 추천 – 3가지 시나리오</h2>
+    <div class="t-grid-dhbr">
+      <div class="m-item-vy8i">
+        <h3>① 스트레스 해소·정신적 휴식</h3>
+        <p>업무 강도와 회의 연속으로 인한 정신적 피로가 심할 경우, 전신 아로마 테라피와 부드러운 스웨디시 마사지가 효과적이다. 이때는 60분 이상의 세션을 선택하고, 차분한 조명과 음악이 제공되는 방을 우선 고려한다.</p>
+        <p>또한, 마사지 전후에 차와 허브 티를 제공하는지 여부를 확인한다. 이는 심신 안정을 돕는 부가 서비스이며, 전반적인 만족도를 크게 높인다.</p>
       </div>
-      <div class="grid-2">
-        <div class="card">
-          <h3>💥 베스트 코스</h3>
-          <p><strong>브로 스페셜 (80분)</strong> – 89,000원<br>전신 스웨디시 + 스트레칭 + 핫스톤. 인기 1위! “한 번 받으면 다른 데 못 가”</p>
-          <p><strong>타이&오일 콜라보 (90분)</strong> – 99,000원<br>타이 스트레칭 + 아로마 오일. “몸이 확 풀리는 게 느껴져”</p>
-        </div>
-        <div class="card">
-          <h3>😎 가성비 코스</h3>
-          <p><strong>점심 타임 스페셜 (50분)</strong> – 49,000원 (평일 12~15시)<br>회사 근처에서 간단하게 풀고 싶은 브로들 추천!</p>
-          <p><strong>야간 할인 (60분)</strong> – 59,000원 (20시 이후)<br>야근 후 몸과 마음을 달래줄 저렴한 코스</p>
-        </div>
+      <div class="m-item-vy8i">
+        <h3>② 스포츠·피트니스 회복</h3>
+        <p>운동 후 근육 경직과 피로를 빠르게 회복하려면 딥 티슈 마사지 혹은 트리거 포인트 치료가 필수이다. 이때는 전문 트레이너와 협업 경험이 있는 시설을 선택하고, 세션당 30~45분 집중적인 압박을 제공하는지 확인한다.</p>
+        <p>추가로 냉온 교대 샤워나 스트레칭 가이드가 제공되는지 여부도 중요한 판단 기준이다. 이러한 부가 요소는 회복 속도를 가속화한다.</p>
       </div>
-    </section>
+      <div class="m-item-vy8i">
+        <h3>③ 의료·재활 목적</h3>
+        <p>수술 후 재활이나 만성 통증 관리가 목표라면, 물리치료사와 연계된 의료 마사지를 찾아야 한다. 이는 전문 의료진이 직접 진단하고, 맞춤형 압력과 스트레칭을 적용한다는 점에서 차별화된다.</p>
+        <p>이 경우, 시설이 의료 보험 적용 여부, 치료 기록 보관 시스템, 그리고 사후 추적 관리(예: 전화 상담)를 제공하는지 확인한다. 이러한 요소는 재활 효과를 지속적으로 검증하는 데 필수적이다.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- 예약 안내 -->
-    <section>
-      <h2>📞 예약은 여기로</h2>
-      <div class="card" style="text-align: center;">
-        <p style="font-size: 1.2rem; font-weight: 700;">전화 한 통이면 끝! 브로들 예약은 최우선 처리</p>
-        <a href="tel:0507-1234-5678" class="tel-link">0507-1234-5678</a>
-        <p>카톡 예약: ID @ydmassagelink<br>문자도 가능! 성함, 원하는 시간, 코스만 보내줘.</p>
-        <p class="text-gray" style="margin-top: 0.5em;">※ 예약 취소는 2시간 전까지 연락 줘야 패널티 없어. 노쇼는 브로 정신 아니잖아?</p>
-      </div>
-    </section>
+  <section class="t-body-3s39">
+    <h2>FAQ – 자주 묻는 질문</h2>
+    <dl class="x-txt-9e54">
+      <dt>예약은 언제까지 가능한가요?</dt>
+      <dd>대부분의 여의도 마사지 업체는 최소 24시간 전 예약을 권장한다. 특히 주말과 공휴일은 조기 예약이 필수이며, 당일 예약은 제한적으로만 가능한 경우가 많다.</dd>
+      <dt>첫 방문 시 준비물은 무엇인가요?</dt>
+      <dd>신분증과 함께 현재 복용 중인 약물 목록을 메모해 가져가면, 상담 시 정확한 맞춤 서비스를 받을 수 있다. 또한, 개인 위생을 위해 깨끗한 옷과 수건을 준비하는 것이 좋다.</dd>
+      <dt>취소 및 환불 정책은 어떻게 되나요?</dt>
+      <dd>업체마다 상이하지만, 일반적으로 12시간 이전 취소 시 전액 환불, 12시간~2시간 전 취소 시 50% 환불이 적용된다. 예약 전 반드시 정책을 확인하고, 서면으로 증빙을 받아 두는 것이 안전하다.</dd>
+    </dl>
+  </section>
 
-    <!-- 지역 시그널 카드 -->
-    <section>
-      <h2>🏙️ 여의도 브로들을 위한 공간</h2>
-      <div class="grid-2">
-        <div class="card border-neon">
-          <h3>회사 바로 앞 힐링</h3>
-          <p>여의도에서 일하는 브로들, 점심시간에 살짝 와서 50분 코스 받고 돌아가면 오후가 완전 달라져. 내가 경험담을 말해주지: “점심에 한 번 받고 나서 업무 효율 200%” – 직장인 김브로 후기.</p>
-        </div>
-        <div class="card border-neon">
-          <h3>회식 후 필수 코스</h3>
-          <p>여의도에서 회식하고 나면 술기운에 몸은 무겁고… 그럴 때 야간 할인 코스 딱이야. “회식 다음 날 아침이 개운해” 소문 자자함. 브로들끼리 단체 예약도 가능하니까 전화 주세요!</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ 자주 묻는 질문 -->
-    <section>
-      <h2>❓ 브로들이 자주 묻는 질문</h2>
-      <div class="faq-item">
-        <div class="faq-question">예약은 꼭 해야 해? <span>+</span></div>
-        <div class="faq-answer">가능하면 예약 강추! 워크인도 받지만 기다릴 수 있어. 특히 금요일 저녁, 토요일은 예약 필수. 전화나 카톡으로 미리 박아놔.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">여자도 이용 가능해? <span>+</span></div>
-        <div class="faq-answer">당연! 브로들만 위한
+  <footer class="k-top-0dax">
+    <p>&copy; 2026 여의도 마사지 정보. 모든 권리 보유.</p>
+  </footer>
 </body>
 </html>
